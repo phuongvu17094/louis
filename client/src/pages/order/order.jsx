@@ -24,7 +24,7 @@ const Order = () => {
 
     const handleDelOrder = async(OrderId)=>{
       try{
-        await axios.delete(`https://louis-a89w.onrender.com/api/orders/${OrderId}`, {withCredentials: true})
+        await axios.delete(`https://louis-uqip.onrender.com/api/orders/${OrderId}`, {withCredentials: true})
       }catch(err){}
     }
     
@@ -34,7 +34,7 @@ const Order = () => {
       const fetchOrders = async () => {
         try {
           const res = await axios.get(
-            `https://louis-a89w.onrender.com/api/orders/find/${userId}`,
+            `https://louis-uqip.onrender.com/api/orders/find/${userId}`,
             { withCredentials: true }
           );
           setOrders(res.data);

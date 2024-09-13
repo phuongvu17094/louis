@@ -190,7 +190,7 @@ const SingleProduct = () => {
   const getRelatedProducts = async (category) => {
     try {
       const res = await axios.get(
-        `https://louis-a89w.onrender.com/api/products?category=${category}&limit=4`
+        `https://louis-uqip.onrender.com/api/products?category=${category}&limit=4`
       );
       setRelatedProducts(res.data.filter((item) => item._id !== id));
     } catch (err) {
@@ -202,7 +202,7 @@ const SingleProduct = () => {
     const getProduct = async () => {
       try {
         const res = await axios.get(
-          `https://louis-a89w.onrender.com/api/products/find/${id}`
+          `https://louis-uqip.onrender.com/api/products/find/${id}`
         );
         setProduct(res.data);
         getRelatedProducts(res.data.categories[0]);
@@ -217,7 +217,7 @@ const SingleProduct = () => {
     const getProduct = async () => {
       try {
         const res = await axios.get(
-          `https://louis-a89w.onrender.com/api/products/find/${id}`
+          `https://louis-uqip.onrender.com/api/products/find/${id}`
         );
         setProduct(res.data);
       } catch (err) {

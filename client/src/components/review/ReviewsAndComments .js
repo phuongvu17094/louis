@@ -126,7 +126,7 @@ const ReviewsAndComments = ({ productId }) => {
   const fetchReviews = async () => {
     try {
       const res = await axios.get(
-        `https://louis-a89w.onrender.com/api/products/${productId}/reviews`
+        `https://louis-uqip.onrender.com/api/products/${productId}/reviews`
       );
       setReviews(res.data);
     } catch (err) {
@@ -147,7 +147,7 @@ const ReviewsAndComments = ({ productId }) => {
         userName: user.username || "Anonymous",
       };
       await axios.post(
-        `https://louis-a89w.onrender.com/api/products/${productId}/reviews`,
+        `https://louis-uqip.onrender.com/api/products/${productId}/reviews`,
         newReviewData,
         { withCredentials: true }
       );

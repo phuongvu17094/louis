@@ -10,7 +10,7 @@ export const login = async (dispatch, user) => {
   dispatch(loginStart());
   try {
     const res = await axios.post(
-      "https://louis-a89w.onrender.com/api/auth/login",
+      "https://louis-uqip.onrender.com/api/auth/login",
       user,
       { withCredentials: true }
     );
